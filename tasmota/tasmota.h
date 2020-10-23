@@ -297,6 +297,7 @@ enum SettingsTextIndex { SET_OTAURL,
                          SET_DEV_GROUP_NAME1, SET_DEV_GROUP_NAME2, SET_DEV_GROUP_NAME3, SET_DEV_GROUP_NAME4,  // MAX_DEV_GROUP_NAMES
                          SET_DEVICENAME,
                          SET_TELEGRAM_TOKEN, SET_TELEGRAM_CHATID,
+                         SET_SHD_PARAM,
 #ifdef ESP32
                          SET_ADC_PARAM1, SET_ADC_PARAM2, SET_ADC_PARAM3, SET_ADC_PARAM4, SET_ADC_PARAM5, SET_ADC_PARAM6, SET_ADC_PARAM7, SET_ADC_PARAM8,  // MAX_ADCS
 #endif
