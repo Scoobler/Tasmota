@@ -557,7 +557,7 @@ struct {
   uint16_t      dimmer_hw_min;             // E90
   uint16_t      dimmer_hw_max;             // E92
   uint32_t      deepsleep;                 // E94
-  uint16_t      hass_new_discovery;       // E98 - ex2_energy_power_delta on 8.4.0.3, replaced on 8.5.0.1
+  uint16_t      hass_new_discovery;        // E98 - ex2_energy_power_delta on 8.4.0.3, replaced on 8.5.0.1
   uint8_t       shutter_motordelay[MAX_SHUTTERS];    // E9A
   int8_t        temp_comp;                 // E9E
   uint8_t       weight_change;             // E9F
@@ -615,8 +615,9 @@ struct {
   uint8_t       shd_leading_edge;          // F5A
   uint16_t      shd_warmup_brightness;     // F5B
   uint8_t       shd_warmup_time;           // F5D
-
-  uint8_t       free_f5e[85];             // F5E - Decrement if adding new Setting variables just above and below
+  uint16_t      dimmer_step;               // F5E
+  
+  uint8_t       free_f5e[82];              // F6A - Decrement if adding new Setting variables just above and below
 
   // Only 32 bit boundary variables below
   SysBitfield5  flag5;                     // FB4
